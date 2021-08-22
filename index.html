@@ -11,7 +11,7 @@
 
 <body class="loading">
 <div class="wrapper">
-	<video id="player" preload="auto" autoplay loop>
+	<video id="player" preload="auto" autoplay loop poster="https://i.imgur.com/lWZ4zGv.png">
 		<!--		<source src="vid/Soviet Army Soldiers Dance To Meshuggah-1.m4v" type="video/m4v">-->
 		<!--		<source src="vid/15aea4b683.360.mp4" type="video/mp4">-->
 		<source src="vid/Berserk 1997 edit _ Little Dark Age-06p2RUP-HqE.mp4">
@@ -119,14 +119,15 @@
 						&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;
 					</marquee>
 				</ul>
-				<!--<p><a href="https://vk.com/doc107278774_447615937?hash=755e84e8b126672379&dl=87e44995a226496721" target="_blank">SAMPLE TEXT</a></p>
-                <ul>-->
+				<p><a href="https://vk.com/doc107278774_447615937?hash=755e84e8b126672379&dl=87e44995a226496721" target="_blank">OSU? BEGONE.</a></p>
+                <ul>
 				<marquee direction="left" aligt="center" scrollamount="70" width="540" style="width:540px;">
 					&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;&nbsp;&bull;
 				</marquee>
+				</ul>
 			</nav>
 		</header>
-	</div>
+	</div>  <!--	NICKNAME -->
 </div>
 </body>
 <script>
@@ -137,12 +138,12 @@
 		if (this.videoPlay === false) {
 			videoPlayer.play();
 			this.videoPlay = true;
-			console.log(this.videoPlay)
+			console.log('Paused:',this.videoPlay)
 
 		} else {
 			videoPlayer.pause();
-			console.log(this.videoPlay)
 			this.videoPlay = false;
+			console.log('Paused:',this.videoPlay)
 		}
 		return;
 	}
