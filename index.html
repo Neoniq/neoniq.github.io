@@ -4,28 +4,16 @@
 	<title>丹从仨尸仈长丹&nbsp;匚口匚丹丁丅&nbsp;</title>
 	<link rel="icon" type="image/ico" sizes="45x48">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<script src="js/skel.min.js"></script>
-	<script src="js/init.js"></script>
-	<script src="https://use.fontawesome.com/13071909f2.js"></script>
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
-<!--	<script type="text/javascript">-->
-<!--		// (c) katanaflash-->
-<!--		<link href="../img/favicon.png" rel="shortcut icon" type="image/png">-->
-<!--			<link rel="shortcut icon" href="favicon.png" type="image/x-icon">-->
-<!--				setInterval function() {-->
-<!--				var lenta = document.title;-->
-<!--				document.title = lenta.substr(1, lenta.length)+lenta.charAt(0);-->
-<!--			}, 500);-->
-<!--	</script>-->
 
 </head>
 
 <body class="loading">
 <div class="wrapper">
 	<video id="player" preload="auto" autoplay loop>
-<!--		<source src="vid/Soviet Army Soldiers Dance To Meshuggah-1.m4v" type="video/m4v">-->
-<!--		<source src="vid/15aea4b683.360.mp4" type="video/mp4">-->
+		<!--		<source src="vid/Soviet Army Soldiers Dance To Meshuggah-1.m4v" type="video/m4v">-->
+		<!--		<source src="vid/15aea4b683.360.mp4" type="video/mp4">-->
 		<source src="vid/Berserk 1997 edit _ Little Dark Age-06p2RUP-HqE.mp4">
 	</video>
 	<div id="overlay"></div>
@@ -35,7 +23,7 @@
 			<h1 class="animated rt">&nbsp</h1>
 			<!-- ! -->
 			<div id="wrapper" class="loading" style="position: left">
-				<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
 					 width="600px" height="100px" viewBox="0 0 600 100">
 					<style type="text/css">
 						<![CDATA[
@@ -141,61 +129,39 @@
 	</div>
 </div>
 </body>
-<script type="text/javascript" src="js/particles.min.js"></script>
-<script type="text/javascript" src="js/actions.js"></script>
-<script type="text/javascript" src="js/spider.js"></script>
-<!-- CLOCK CLOCK CLOCK CLOCK CLOCK CLOCK CLOCK  -->
-<!-- <script type="text/javascript">
-    function clock() {
-        var d = new Date();
-        var hours = d.getHours();
-        var minutes = d.getMinutes();
-        var seconds = d.getSeconds();
-
-
-        if (hours <= 9) hours = "0" + hours;
-        if (minutes <= 9) minutes = "0" + minutes;
-        if (seconds <= 9) seconds = "0" + seconds;
-
-        date_time = hours + ":" + minutes + ":" + seconds;
-        if (document.layers) {
-            document.layers.doc_time.document.write(date_time);
-            document.layers.doc_time.document.close();
-        } else document.getElementById("doc_time").innerHTML = date_time;
-        setTimeout("clock()", 1000);
-    }
-</script> -->
-<!-- CLOCK CLOCK CLOCK CLOCK CLOCK CLOCK CLOCK  -->
-<script type="text/javascript">
-	clock();
-</script>
-
 <script>
-	document.onkeydown = function(e) {
+	let videoPlay = false;
+
+	function videoToggle() {
+		const videoPlayer = document.getElementById('player');
+		if (this.videoPlay === false) {
+			videoPlayer.play();
+			this.videoPlay = true;
+			console.log(this.videoPlay)
+
+		} else {
+			videoPlayer.pause();
+			console.log(this.videoPlay)
+			this.videoPlay = false;
+		}
+		return;
+	}
+
+	document.onkeydown = function (e) {
+		videoToggle();
 		if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) { //Alt+c, Alt+v will also be disabled sadly.
 		}
 		return false;
 	};
-</script>
 
-<script>
 	function click() {
+		videoToggle();
 		if (event.button == 2 || event.button == 3) {
 			oncontextmenu = 'return false';
 		}
 	}
+
 	document.onmousedown = click
 	document.oncontextmenu = new Function("return false;")
 </script>
-
-
-
-
-
-
-
-
-<!-- GLITCH  GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH GLITCH  -->
-
-
 </html>

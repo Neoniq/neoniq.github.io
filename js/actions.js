@@ -5,12 +5,12 @@
 // 	}, i*600); // delay 100 ms
 // });
 
-$('.animated').each(function(i) {
-	var $animate = $(this);
-	setTimeout(function() {
-		$animate.addClass('fadeInDown');
-	}, i*300); // delay 100 ms
-});
+// $('.animated').each(function(i) {
+// 	var $animate = $(this);
+// 	setTimeout(function() {
+// 		$animate.addClass('fadeInDown');
+// 	}, i*300); // delay 100 ms
+// });
 
 particlesJS('particles', {
 	particles: {
